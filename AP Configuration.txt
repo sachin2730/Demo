@@ -1,0 +1,25 @@
+AP COnfiguration
+
+Deafult- username & password- Cisco
+Connect with Console cable
+
+
+
+
+For IOS based APs:
+AP#capwap ap ip address <IP address> <subnet mask>
+
+AP#capwap ap ip default-gateway <IP-address>
+
+AP#capwap ap primary-base <WLC-sysname> <IP-address>
+
+AP#capwap ap secondary-base <WLC-sysname> <IP-address>
+   (optional)
+AP#capwap ap hostname <name>
+  (optional)
+AP#ip domain name cisco.com
+
+   AP#ip name-server 172.20.1.23
+
+AP will take image from WLC.
+Go to WLC >all ap's >refresh from there we can replicate remainng setting as other's AP has.
